@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a;
+        function init()
+        {
+            
+            /*a=document.getElementById("a");
+            a.onmouseover = over;
+            a.onmouseout = out;*/
+
+            //a.addEventListener("mouseover",over);
+            //a.addEventListener("mouseover",out);
+
+            a.addEventListener("mouseover",function(){a.style.backgroundColor='white';})
+            a.addEventListener("mouseout",function(){a.style.backgroundColor='red';})
+
+        }
+       /* function over()
+        {
+            a.style.backgroundColor = "orchid";
+        }
+        function out()
+        {
+            a.style.backgroundColor = "black";
+        }*/
+    </script>
+</head>
+<body onload = "init()">
+    <h3>DOM 객체의 이벤트 리스너 프로퍼티에 함수 등록</h3>
+<hr>
+<p id="a">마우스 올리면 orchid 색으로 변경</p>
+</body>
+</html>

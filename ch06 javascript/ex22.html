@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(c,d)
+        {
+            sum = c+d;
+            return sum;
+        }
+        function add1()
+        {
+            f=document.frm;
+            s= parseInt(f.n1.value) + parseInt(f.n2.value);
+            f.sum.value=s;
+        }
+    </script>
+</head>
+<body>
+    <h3>함수호출하기</h3><hr>
+    <script>
+
+        var n =add(123,456)
+        
+        document.writeln(n);
+    </script>
+    
+        <form name="frm">
+        숫자1:<input name = "n1"> +숫자2: <input name = "n2"><br>
+        <input name="sum">
+        <input type="button" value="더하기" onclick="add1()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Data 객체 사용하기</h3><hr>
+    <script>
+        var now = new Date();
+        document.writeln(now.toUTCString()+"<br><br>");
+        document.writeln(now.getFullYear()+"년<br><br>");
+        document.writeln(now.getMonth()+1+"월<br><br>");
+        document.writeln(now.getDate()+"일<br><br>");
+        document.writeln(now.getHours()+"시<br><br>");
+        document.writeln(now.getMinutes()+"분<br><br>");
+        document.writeln(now.getSeconds()+"초<br><br>");
+        //document.writeln(now.getMilliseconds()+"새로고침<br><br>");
+        window.setTimeout("window.location.send()",1);
+        //페이지 방문시 초시간 짝수이면 violet, 홀수이면 lightskyblue
+        if(now.getSeconds()%2)
+        {
+            document.body.style.backgroundColor="violet";
+        }
+        else
+        {
+            document.body.style.backgroundColor="lightskyblue";
+        }
+
+    </script>
+</body>
+</html>

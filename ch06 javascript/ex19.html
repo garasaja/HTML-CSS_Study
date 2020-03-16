@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>break문</h3><hr>
+    <script>
+        flag=true;
+        var sum=0;
+        for(var i=0;true;i++)
+        {
+            sum+=i;
+            if(sum>3000)
+            {
+                sum=sum-i;
+                i=i-1;
+                break;
+            }
+        }
+        document.writeln("1부터 " + i + "까지의 합이 "+sum+"이고 3000이상 되기전 숫자입니다." );
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function randomInt()
+        {
+            return Math.floor(Math.random()*9)+1;
+        }
+    </script>
+</head>
+<body>
+    <h3>Math 객체 만들기</h3><hr>
+    <script>
+        var q =randomInt() + "*" + randomInt();
+        var u = prompt(q + "이 식에 대한 답은 머냐?");
+        if(u==null)
+        {
+            document.writeln("수고용");//팝업창 취소누를때
+        }
+        else 
+        {
+            var answer = eval(q);
+            if(u==answer)
+            {
+                document.writeln("정답!");
+            }
+            else
+            {
+                document.writeln("오답");
+            }
+            document.writeln(q + " = " + "<strong>" + ans + "</strong>");
+        }
+
+    </script>
+</body>
+</html>

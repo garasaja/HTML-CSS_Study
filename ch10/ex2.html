@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var timecheck=null;
+        function startTimer(time)
+        {
+            timecheck = setTimeout("load('http://naver.com')",time);
+           // alert(timecheck);
+            document.getElementById("img").title="타이머 작동시작";
+            
+        }
+        function cancelTimer()
+        {
+            if(timecheck!=null)
+            {
+                clearTimeout(timecheck);
+            }
+        }
+        function load(url)
+        {
+            location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <h3>event</h3><hr>
+    <img id="img" src ="naver.gif" onmouseover = "startTimer(3000)"
+                          onmouseout = "cancelTimer()">
+</body>
+</html>

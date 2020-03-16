@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>자바스크립트 배열만들기</h3><hr>
+    <script>
+    var a =[1,2,3,4,5];
+    sum=0;
+    for(var i=0;i<a.length;i++)
+    {
+        sum+=a[i];    
+    }
+    document.writeln(sum+"<br>");
+
+    var sum1=0;
+    var arr = new Array();
+    //자바 = 데이타타입이 존재하므로 동일한 타입저장
+    //js = 동일한 타입 아니어도 ㄱㅊ
+    //일반적으로 동일한 타입
+    arr[0]=15;
+    arr[1]=16;
+    arr[2]=12;
+    arr[3]=13;
+    arr[4]=15;
+    for(var i=0;i<arr.length;i++)
+    {
+        sum1+=arr[i];
+    }
+    document.writeln(sum1);
+</script>
+</body>
+</html>

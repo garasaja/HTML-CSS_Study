@@ -1,0 +1,14 @@
+p{
+    font-weight: 500;
+}    
+.picturesize{
+    width:500px;
+    height:100px;
+    margin-left: 10em;
+}
+body,h1{
+    text-align: center;
+}
+li{
+    text-align: left;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>String 객체 사용하기</h3><hr>
+    <script>
+        var a = new String("Boys and Girls");
+        var b = "!!";
+        //charAt()함수는 문자를 찾는 함수, 찾아서 리턴
+        //concat()함수는 결합하는 함수
+        //indexOf()함수는 문자를 찾는 함수, 위치번호나옴
+        //lastIndexOf함수는 뒤에서 문자를 찾는 함수,2자 이상의 단어도 가능
+        //slice(a,b)함수는 a(시작값)에서b(끝값)까지 값을 추출
+        //toUpperCase()함수는 소문자->대문자 바꿔줌
+        //replace("a","b")함수는 a를 b로 바꿔줌
+        //trim("   a ")함수는 문자 공백제거
+        //split(" ")함수는 빈칸을 구분자로 분리
+        document.writeln(a.charAt(0)+"<br>");
+        document.writeln(a.concat(b,"입니다.")+"<br>");
+        document.writeln(a.concat(b)+"<br>");
+        document.writeln(a.concat(b,"입니다.","ㅋㅋ","ㅎㅇ")+"<br>");
+        document.writeln(a.indexOf("s")+"<br>");
+        document.writeln(a.lastIndexOf("s")+"<br>");
+        document.writeln(a.slice(5,8)+"<br>");
+        document.writeln(a.toUpperCase()+"<br>");
+        document.writeln(a.replace("and","or")+"<br>");
+        document.writeln(a.trim()+"<br>");
+        var sub = a.split(" ");
+        for(var i=0;i<sub.length;i++)
+        {
+            document.writeln(sub[i]+"<br>");
+        }
+        document.writeln("<hr>");
+
+        var s ="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=421&aid=0004515570"
+        document.writeln(s);
+        document.writeln("<hr>");
+        //var len = s.indexOf('?'); 
+        var s1 = s.slice(s.indexOf('?')+1);
+        //document.writeln(s1);
+        var s2 = s1.split('&');
+        for(var i=0;i<s2.length;i++)
+        {
+            var s3= s2[i].split("=");
+            document.writeln(s3[0]+"<br>");
+        }
+        document.writeln("<hr>");
+        for(var i=0;i<s2.length;i++)
+        {
+            //var s3= s2[i].split("=");
+            document.writeln(s2[i].split('=')[1]+"<br>");
+        }
+        document.writeln("<hr>");
+
+    </script>
+</body>
+</html>

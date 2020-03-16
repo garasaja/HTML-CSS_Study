@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a()
+        {
+            name=prompt("이름을 입력하세요");
+            ok=confirm("집에갈래?");
+            if(ok==true)
+            {
+                document.writeln("집에가자");    
+            }
+            else
+            {
+                document.writeln("공부더해라");    
+            }
+            document.writeln(name);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="a()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>반복문</h3><hr>
+    <h3>1~20사이 3의배수의 합</h3><hr>
+
+    <script>
+        var sum=0;
+        for(var i=1;i<21;i++)
+        {
+            if(i%3==0&&i<17)
+            {
+                sum+=i;
+                document.writeln(i +" + ");               
+            }
+            if(i==18)
+            {
+                sum+=i;
+                document.writeln(i+ " = ");
+            }       
+        }
+        document.writeln(sum);
+        document.writeln("<br>");
+
+        var sum2=0;
+        for(var j=1;j<21;j++)
+        {
+            if(j%10==3||j%10==6||j%10==9&&j<18)
+            {
+                sum2+=j;
+                document.writeln(j +" + ");
+            }           
+            if(j==19)
+            {
+                sum2+=j;
+                document.writeln(j+ " = ");
+            }            
+        }
+        //document.writeln("<br>");
+        
+        document.writeln(sum2);
+       /* for(var i=0;i<10;i++)
+        {
+            for(var j=10-i;j<i;j--)
+            {
+                document.writeln("*");
+            }
+            document.writeln("<br>");
+        }*/
+    </script>
+</body>
+</html>

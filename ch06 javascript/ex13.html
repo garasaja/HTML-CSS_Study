@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1~12월까지 계절 맞추기</h3><hr>
+    <script>
+        var month = prompt("월을 입력하세요",3);
+        var value;
+        var error;
+
+        if(month==12||month==1||month==2)
+        {
+            value="겨울";
+        }
+        else if(month==3||month==4||month==5)
+        {
+            value="봄";
+        }
+        else if(month==6||month==7||month==8)
+        {
+            value="여름";
+        }
+        else if(month==9||month==10||month==11)
+        {
+            value="가을";
+        }
+        else
+        {
+            value = "계절이 없습니다."   ;
+        }
+        document.writeln("당신이 선택한 " + month+"월은"+value+"입니다.");
+    </script>
+</body>
+</html>

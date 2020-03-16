@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc()
+        {
+            res=eval("2*3+4*6");
+            document.writeln(res);
+            res2 = parseInt("0x32");
+            document.writeln(res2);
+            res3 = parseInt("aaa");
+            if(isNaN(res3))//숫자 문자 판단
+            {
+                document.writeln("res3은 숫자가 아닙니다.")
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <script>
+        calc();
+    </script>
+</body>
+</html>
